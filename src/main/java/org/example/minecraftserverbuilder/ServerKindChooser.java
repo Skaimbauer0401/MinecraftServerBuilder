@@ -58,14 +58,14 @@ public class ServerKindChooser implements Initializable {
         fabricImageView.setImage(new Image("file:images/fabric.png"));
         paperImageView.setImage(new Image("file:images/paper.png"));
 
-        vanillaText.setText("Der standard Minecraft Server\n" +
-                "kein Modsupport\n" +
-                "kein Pluginsupport");
-        fabricText.setText("Der erweiterte Minecraft Server mit unbegrenzten Möglichkeiten\n" +
+        vanillaText.setText("The standard Minecraft server\n" +
+                "No modsupport\n" +
+                "No pluginsupport");
+        fabricText.setText("The advanced Minecraft server with unlimited possibilities\n" +
                 "Modsupport\n" +
-                "kein Pluginsupport");
-        paperText.setText("Für Performance optimierter Minecraft Server\n" +
-                "kein Modsupport\n" +
+                "No pluginsupport");
+        paperText.setText("Performance optimized Minecraft server\n" +
+                "No modsupport\n" +
                 "Pluginsupport");
 
     }
