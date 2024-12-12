@@ -27,11 +27,10 @@ public class HelloApplication extends Application {
                 serverType = ServerType.VANILLA;
             }
 
-
             s=stage;
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Server_start.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
-            stage.setTitle("ServerBuilder");
+            stage.setTitle("ServerManager");
             stage.setScene(scene);
             stage.show();
         }else{
