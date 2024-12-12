@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="1160.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minecraftserverbuilder.ServerKindChooser">
+   <children>
+      <Button layoutX="50.0" layoutY="50.0" mnemonicParsing="false" onAction="#vanillaChoosen" prefHeight="90.0" prefWidth="178.0" style="-fx-background-color: #4a4a4a; -fx-border-color: #d6d6d6; -fx-border-radius: 30; -fx-background-radius: 30;" text="Vanilla" textAlignment="CENTER" textFill="#d6d6d6">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Button layoutX="50.0" layoutY="170.0" mnemonicParsing="false" onAction="#fabricChoosen" prefHeight="90.0" prefWidth="178.0" style="-fx-background-color: #4a4a4a; -fx-border-color: #d6d6d6; -fx-border-radius: 30; -fx-background-radius: 30;" text="Fabric" textAlignment="CENTER" textFill="#d6d6d6">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Button layoutX="50.0" layoutY="290.0" mnemonicParsing="false" onAction="#paperChoosen" prefHeight="90.0" prefWidth="178.0" style="-fx-background-color: #4a4a4a; -fx-border-color: #d6d6d6; -fx-background-radius: 30; -fx-border-radius: 30;" text="Paper" textAlignment="CENTER" textFill="#d6d6d6">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <ImageView fx:id="vanillaImageView" fitHeight="90.0" fitWidth="292.0" layoutX="243.0" layoutY="50.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="fabricImageView" fitHeight="90.0" fitWidth="454.0" layoutX="243.0" layoutY="170.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="paperImageView" fitHeight="90.0" fitWidth="392.0" layoutX="243.0" layoutY="290.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="vanillaText" layoutX="544.0" layoutY="50.0" prefHeight="90.0" prefWidth="522.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fabricText" layoutX="544.0" layoutY="170.0" prefHeight="90.0" prefWidth="522.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="paperText" layoutX="544.0" layoutY="290.0" prefHeight="90.0" prefWidth="522.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="702.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minecraftserverbuilder.fabric.FabricChooseController">
+    <children>
+        <Button layoutX="57.0" layoutY="198.0" mnemonicParsing="false" onAction="#fertigpressed" prefHeight="40.0" prefWidth="66.0" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-background-radius: 10; -fx-border-radius: 10;" text="Fertig">
+            <font>
+                <Font size="13.0" />
+            </font></Button>
+        <ComboBox fx:id="minecraftVersion" layoutX="57.0" layoutY="20.0" prefHeight="40.0" prefWidth="316.0" promptText="Minecraft Version" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-border-radius: 10; -fx-background-radius: 10;" />
+        <ComboBox fx:id="fabricVersion" layoutX="57.0" layoutY="80.0" prefHeight="40.0" prefWidth="316.0" promptText="Fabric Loader Version" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-border-radius: 10; -fx-background-radius: 10;" />
+        <ComboBox fx:id="installerVersion" layoutX="57.0" layoutY="141.0" prefHeight="40.0" prefWidth="316.0" promptText="Installer Version" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-border-radius: 10; -fx-background-radius: 10;" />
+      <Label layoutX="399.0" layoutY="92.0" text="Neueste Empfohlen" textFill="#d6d6d6" />
+      <Label layoutX="399.0" layoutY="153.0" text="Neueste Empfohlen" textFill="#d6d6d6" />
+      <Label fx:id="downloadLabel" layoutX="150.0" layoutY="205.0" text="Downloading Server Files" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
