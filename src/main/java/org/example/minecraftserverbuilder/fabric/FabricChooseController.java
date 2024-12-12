@@ -52,7 +52,7 @@ public class FabricChooseController implements Initializable {
 
 
     @FXML
-    public void fertigpressed(ActionEvent actionEvent) throws IOException, InterruptedException {
+    public void readyPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
         if(minecraftVersion.getSelectionModel().getSelectedItem()!=null||installerVersion.getSelectionModel().getSelectedItem()!=null||fabricVersion.getSelectionModel().getSelectedItem()!=null){
 
             new FabricDownloadThread(this).start();

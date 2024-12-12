@@ -47,7 +47,7 @@ public class PaperChooseController implements Initializable {
     }
 
     @javafx.fxml.FXML
-    public void fertigPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
+    public void readyPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
         if(paperVersion.getSelectionModel().getSelectedItem() != null){
 
             new PaperDownloadThread(this).start();

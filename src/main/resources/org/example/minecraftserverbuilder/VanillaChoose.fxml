@@ -7,7 +7,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minecraftserverbuilder.vanilla.VanillaChooseController">
    <children>
       <ComboBox fx:id="vanillaVersion" layoutX="147.0" layoutY="108.0" prefHeight="40.0" prefWidth="316.0" promptText="Version" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-background-radius: 10; -fx-border-radius: 10;" />
-      <Button layoutX="147.0" layoutY="160.0" mnemonicParsing="false" onAction="#fertigPressed" prefHeight="40.0" prefWidth="66.0" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-background-radius: 10; -fx-border-radius: 10;" text="Ready">
+      <Button layoutX="147.0" layoutY="160.0" mnemonicParsing="false" onAction="#readyPressed" prefHeight="40.0" prefWidth="66.0" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-background-radius: 10; -fx-border-radius: 10;" text="Ready">
          <font>
             <Font size="13.0" />
          </font></Button>
