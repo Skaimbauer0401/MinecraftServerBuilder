@@ -12,6 +12,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     static Stage s;
     public static ServerType serverType;
+    String test = "testsetsetsetsetsetsetsetse";
 
     @Override
     public void start(Stage stage) throws IOException {
