@@ -8,6 +8,12 @@ The application also features a server manager with a drag and drop system for m
 
 
 
-You can find the finished .jar file out.artifacts.minecrafttest_jar
+You can find the finished .jar file out.artifacts.serverbuilder_jar
+
+put the file in a folder and just double click it
+
+you need to have jdk 21 or newer installed for newer minecraft server versions (https://www.oracle.com/java/technologies/downloads/)
+
+
 
 Feel free to adapt the code to your needs
