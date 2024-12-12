@@ -35,7 +35,6 @@ public class ServerThread extends Thread {
             if (files[i].getName().endsWith(".jar")) {
                 pb = new ProcessBuilder("java","-Xmx"+xmx+"M","-Xms"+xms+"M", "-jar", files[i].getName(), "nogui");
                 pb.directory(files[i].getParentFile());
-                System.out.println(files[i].getName());
                 break;
             }
         }

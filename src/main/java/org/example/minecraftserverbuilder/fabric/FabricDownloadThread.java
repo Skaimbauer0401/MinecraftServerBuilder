@@ -21,6 +21,7 @@ public class FabricDownloadThread extends Thread {
             URL url = new URL("https://meta.fabricmc.net/v2/versions/loader/"+controller.minecraftVersion.getSelectionModel().getSelectedItem().version+"/"+ controller.fabricVersion.getSelectionModel().getSelectedItem().version+"/"+controller.installerVersion.getSelectionModel().getSelectedItem().version+"/server/jar");
             InputStream stream = stream = url.openStream();
 
+            System.out.println(".jar Download started");
             FileOutputStream fos = new FileOutputStream("server/fabric.jar");
 
             byte[] buffer = new byte[1024];

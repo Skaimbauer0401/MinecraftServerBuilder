@@ -24,9 +24,8 @@ public class VanillaDownloadThread extends Thread {
 
             InputStream stream = stream = url.openStream();
 
+            System.out.println(".jar Download started");
             FileOutputStream fos = new FileOutputStream("server/vanilla.jar");
-
-            System.out.println("started downloading");
 
             byte[] buffer = new byte[1024];
             int length;
@@ -47,8 +46,6 @@ public class VanillaDownloadThread extends Thread {
                     }
                 }
             });
-
-
 
         } catch (Exception e) {
             throw new RuntimeException(e);

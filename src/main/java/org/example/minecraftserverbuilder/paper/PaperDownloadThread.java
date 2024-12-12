@@ -25,6 +25,7 @@ public class PaperDownloadThread extends Thread {
             URL url = new URL(controller.paperVersion.getSelectionModel().getSelectedItem().getUrl()+"/download");
             InputStream stream = stream = url.openStream();
 
+            System.out.println(".jar Download started");
             FileOutputStream fos = new FileOutputStream("server/paper.jar");
 
             byte[] buffer = new byte[1024];

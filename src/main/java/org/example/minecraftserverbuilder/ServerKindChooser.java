@@ -123,7 +123,6 @@ public class ServerKindChooser implements Initializable {
                     return FileVisitResult.CONTINUE;
                 }
             });
-            System.out.println("Der Ordner wurde erfolgreich gelöscht.");
         } catch (IOException e) {
             System.err.println("Fehler beim Löschen des Ordners: " + e.getMessage());
         }
