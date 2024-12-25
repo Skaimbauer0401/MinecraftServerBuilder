@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import org.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.GraphicStart;
 
 import java.io.*;
 import java.net.URL;
@@ -64,6 +64,6 @@ public class FabricChooseController implements Initializable {
     }
 
     public void nextScene() throws IOException {
-        HelloApplication.switchScene("Server_start.fxml");
+        GraphicStart.switchScene("Server_start.fxml");
     }
 }

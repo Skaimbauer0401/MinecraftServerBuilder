@@ -6,7 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.*;
 import org.minecraftserverbuilder.ServerType;
-import org.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.GraphicStart;
 
 import java.io.*;
 import java.net.URL;
@@ -41,7 +41,7 @@ public class ServerStartController implements Initializable {
 
         serverStopButton.setVisible(false);
 
-        if(HelloApplication.serverType== ServerType.FABRIC || HelloApplication.serverType==ServerType.PAPER){
+        if(GraphicStart.serverType== ServerType.FABRIC || GraphicStart.serverType==ServerType.PAPER){
 
             modListLabel.setVisible(true);
             modPluginList.setVisible(true);
@@ -109,7 +109,7 @@ public class ServerStartController implements Initializable {
 
     @FXML
     public void onDragOver(DragEvent event) {
-        if(HelloApplication.serverType==ServerType.FABRIC || HelloApplication.serverType== ServerType.PAPER){
+        if(GraphicStart.serverType==ServerType.FABRIC || GraphicStart.serverType== ServerType.PAPER){
             if(event.getGestureSource() != modPluginList && event.getDragboard().hasFiles()){
                 event.acceptTransferModes(TransferMode.MOVE);
             }
@@ -122,7 +122,7 @@ public class ServerStartController implements Initializable {
     @FXML
     public void onDragDropped(DragEvent event) {
         if(new File("server/mods").exists()||new File("server/plugins").exists()){
-            if(HelloApplication.serverType==ServerType.FABRIC){
+            if(GraphicStart.serverType==ServerType.FABRIC){
                 Dragboard dragboard = event.getDragboard();
                 if(dragboard.hasFiles()){
                     File file = dragboard.getFiles().get(0);
@@ -135,7 +135,7 @@ public class ServerStartController implements Initializable {
                 }
 
                 modPluginListAktualisieren();
-            }else if(HelloApplication.serverType==ServerType.PAPER){
+            }else if(GraphicStart.serverType==ServerType.PAPER){
                 Dragboard dragboard = event.getDragboard();
                 if(dragboard.hasFiles()){
                     File file = dragboard.getFiles().get(0);
@@ -147,7 +147,7 @@ public class ServerStartController implements Initializable {
                 }
 
                 modPluginListAktualisieren();
-            }else if(HelloApplication.serverType==ServerType.VANILLA){
+            }else if(GraphicStart.serverType==ServerType.VANILLA){
                 System.out.println("In Vanilla sind keine Mods/Plugins supportet");
             }
         }else{

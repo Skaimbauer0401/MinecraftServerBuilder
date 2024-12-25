@@ -72,20 +72,20 @@ public class ServerKindChooser implements Initializable {
 
     @javafx.fxml.FXML
     public void vanillaChoosen(ActionEvent actionEvent) throws IOException {
-        HelloApplication.serverType = ServerType.VANILLA;
-        HelloApplication.switchScene("VanillaChoose.fxml");
+        GraphicStart.serverType = ServerType.VANILLA;
+        GraphicStart.switchScene("VanillaChoose.fxml");
     }
 
     @javafx.fxml.FXML
     public void fabricChoosen(ActionEvent actionEvent) throws IOException {
-        HelloApplication.serverType = ServerType.FABRIC;
-        HelloApplication.switchScene("FabricChoose.fxml");
+        GraphicStart.serverType = ServerType.FABRIC;
+        GraphicStart.switchScene("FabricChoose.fxml");
     }
 
     @javafx.fxml.FXML
     public void paperChoosen(ActionEvent actionEvent) throws IOException {
-        HelloApplication.serverType = ServerType.PAPER;
-        HelloApplication.switchScene("PaperChoose.fxml");
+        GraphicStart.serverType = ServerType.PAPER;
+        GraphicStart.switchScene("PaperChoose.fxml");
     }
 
 

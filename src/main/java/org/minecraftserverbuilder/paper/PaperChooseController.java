@@ -7,7 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import org.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.GraphicStart;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -59,6 +59,6 @@ public class PaperChooseController implements Initializable {
     }
 
     public void nextScene() throws IOException {
-        HelloApplication.switchScene("Server_start.fxml");
+        GraphicStart.switchScene("Server_start.fxml");
     }
 }

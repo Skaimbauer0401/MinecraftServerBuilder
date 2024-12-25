@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class GraphicStart extends Application {
     static Stage s;
     public static ServerType serverType;
 
@@ -28,14 +28,14 @@ public class HelloApplication extends Application {
             }
 
             s=stage;
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Server_start.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GraphicStart.class.getResource("Server_start.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setTitle("ServerManager");
             stage.setScene(scene);
             stage.show();
         }else{
             s=stage;
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("LoaderVersion.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(GraphicStart.class.getResource("LoaderVersion.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setTitle("ServerBuilder");
             stage.setScene(scene);
@@ -48,7 +48,7 @@ public class HelloApplication extends Application {
     }
 
     public static void switchScene(String nameFXMLFILE) throws IOException {
-        FXMLLoader l = new FXMLLoader(HelloApplication.class.getResource(nameFXMLFILE));
+        FXMLLoader l = new FXMLLoader(GraphicStart.class.getResource(nameFXMLFILE));
         Parent p = l.load();
         Scene scene = new Scene(p);
         s.setScene(scene);
