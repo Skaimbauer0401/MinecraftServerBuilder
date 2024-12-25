@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder.vanilla;
+package org.minecraftserverbuilder.paper;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,7 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import org.example.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.HelloApplication;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -16,13 +16,12 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class VanillaChooseController implements Initializable {
-
+public class PaperChooseController implements Initializable {
 
     @javafx.fxml.FXML
-    protected ComboBox<GameVersion> vanillaVersion;
+    protected ComboBox<GameVersion> paperVersion;
     @javafx.fxml.FXML
-    protected Label downloadLabel;
+    private Label downloadLabel;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -30,7 +29,7 @@ public class VanillaChooseController implements Initializable {
 
         System.out.println("Versionsdaten lesen");
         try {
-            URL urlMcVersions = new URL("https://mcutils.com/api/server-jars/vanilla");
+            URL urlMcVersions = new URL("https://mcutils.com/api/server-jars/paper");
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
             Type listType = new TypeToken<List<GameVersion>>(){}.getType();
@@ -39,7 +38,7 @@ public class VanillaChooseController implements Initializable {
 
             System.out.println("versionsdaten gelesen");
 
-            vanillaVersion.getItems().addAll(games);
+            paperVersion.getItems().addAll(games);
 
             System.out.println("versionsdaten angezeigt \n");
         }catch(Exception e){
@@ -49,15 +48,14 @@ public class VanillaChooseController implements Initializable {
 
     @javafx.fxml.FXML
     public void readyPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
-        if(vanillaVersion.getSelectionModel().getSelectedItem() != null){
+        if(paperVersion.getSelectionModel().getSelectedItem() != null){
 
-            new VanillaDownloadThread(this).start();
+            new PaperDownloadThread(this).start();
 
             downloadLabel.setVisible(true);
         }else{
             System.out.println("Bitte Version wählen");
         }
-
     }
 
     public void nextScene() throws IOException {

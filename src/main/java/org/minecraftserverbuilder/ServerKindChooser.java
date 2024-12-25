@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder;
+package org.minecraftserverbuilder;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;

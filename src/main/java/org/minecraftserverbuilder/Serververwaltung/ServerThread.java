@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder.Serververwaltung;
+package org.minecraftserverbuilder.Serververwaltung;
 
 import javafx.application.Platform;
 import javafx.scene.control.TextArea;

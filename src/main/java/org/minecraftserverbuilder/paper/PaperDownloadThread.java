@@ -1,31 +1,32 @@
-package org.example.minecraftserverbuilder.vanilla;
+package org.minecraftserverbuilder.paper;
 
 import javafx.application.Platform;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.net.URL;
 
-public class VanillaDownloadThread extends Thread {
-    VanillaChooseController controller;
+public class PaperDownloadThread extends Thread {
+    PaperChooseController controller;
 
-    public VanillaDownloadThread(VanillaChooseController controller) {
+    public PaperDownloadThread(PaperChooseController controller) {
         this.controller = controller;
     }
+
 
     @Override
     public void run() {
         super.run();
-        controller.downloadLabel.setVisible(true);
 
         try {
-            URL url = new URL(controller.vanillaVersion.getSelectionModel().getSelectedItem().getUrl()+"/download");
-
+            URL url = new URL(controller.paperVersion.getSelectionModel().getSelectedItem().getUrl()+"/download");
             InputStream stream = stream = url.openStream();
 
             System.out.println(".jar Download started");
-            FileOutputStream fos = new FileOutputStream("server/vanilla.jar");
+            FileOutputStream fos = new FileOutputStream("server/paper.jar");
 
             byte[] buffer = new byte[1024];
             int length;
@@ -47,8 +48,13 @@ public class VanillaDownloadThread extends Thread {
                 }
             });
 
-        } catch (Exception e) {
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
     }
 }

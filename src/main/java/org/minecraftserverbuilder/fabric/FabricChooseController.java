@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder.fabric;
+package org.minecraftserverbuilder.fabric;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -7,7 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import org.example.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.HelloApplication;
 
 import java.io.*;
 import java.net.URL;

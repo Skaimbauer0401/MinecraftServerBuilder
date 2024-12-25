@@ -1,37 +1,27 @@
-package org.example.minecraftserverbuilder.fabric;
+package org.minecraftserverbuilder.fabric;
 
-public class Loader {
-    public String separator;
-    public int build;
+public class Installer {
+    public String url;
     public String maven;
     public String version;
     public boolean stable;
 
-    public Loader() {
+    public Installer() {
     }
 
-    public Loader(String separator, int build, String maven, String version, boolean stable) {
-        this.separator = separator;
-        this.build = build;
+    public Installer(String url, String maven, String version, boolean stable) {
+        this.url = url;
         this.maven = maven;
         this.version = version;
         this.stable = stable;
     }
 
-    public String getSeparator() {
-        return separator;
+    public String getUrl() {
+        return url;
     }
 
-    public void setSeparator(String separator) {
-        this.separator = separator;
-    }
-
-    public int getBuild() {
-        return build;
-    }
-
-    public void setBuild(int build) {
-        this.build = build;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getMaven() {

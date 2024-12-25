@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder.paper;
+package org.minecraftserverbuilder.vanilla;
 
 import java.io.Serializable;
 

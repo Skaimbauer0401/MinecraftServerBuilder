@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder;
+package org.minecraftserverbuilder;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

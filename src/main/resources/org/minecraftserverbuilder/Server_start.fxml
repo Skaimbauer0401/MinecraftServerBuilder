@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="630.0" prefWidth="1599.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minecraftserverbuilder.Serververwaltung.ServerStartController">
+<AnchorPane prefHeight="630.0" prefWidth="1599.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.minecraftserverbuilder.Serververwaltung.ServerStartController">
    <children>
       <Button fx:id="serverStartButton" layoutX="14.0" layoutY="109.0" mnemonicParsing="false" onAction="#serverStart" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-border-radius: 10; -fx-background-radius: 10;" text="Start server" textFill="#080808" />
       <TextField layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="104.0" promptText="min RAM in MB" style="-fx-background-color: #989898; -fx-border-color: #d6d6d6; -fx-border-radius: 10; -fx-background-radius: 10; -fx-prompt-text-fill: #080808;" fx:id="xms" />

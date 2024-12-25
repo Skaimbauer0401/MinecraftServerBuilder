@@ -1,4 +1,4 @@
-package org.example.minecraftserverbuilder.fabric;
+package org.minecraftserverbuilder.fabric;
 
 import java.util.ArrayList;
 

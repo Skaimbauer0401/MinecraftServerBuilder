@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="430.0" prefWidth="1160.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.minecraftserverbuilder.ServerKindChooser">
+<AnchorPane prefHeight="430.0" prefWidth="1160.0" style="-fx-background-color: #404040;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.minecraftserverbuilder.ServerKindChooser">
    <children>
       <Button layoutX="50.0" layoutY="50.0" mnemonicParsing="false" onAction="#vanillaChoosen" prefHeight="90.0" prefWidth="178.0" style="-fx-background-color: #4a4a4a; -fx-border-color: #d6d6d6; -fx-border-radius: 30; -fx-background-radius: 30;" text="Vanilla" textAlignment="CENTER" textFill="#d6d6d6">
          <font>

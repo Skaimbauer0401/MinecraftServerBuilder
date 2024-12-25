@@ -1,12 +1,12 @@
-package org.example.minecraftserverbuilder.Serververwaltung;
+package org.minecraftserverbuilder.Serververwaltung;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.*;
-import org.example.minecraftserverbuilder.ServerType;
-import org.example.minecraftserverbuilder.HelloApplication;
+import org.minecraftserverbuilder.ServerType;
+import org.minecraftserverbuilder.HelloApplication;
 
 import java.io.*;
 import java.net.URL;
