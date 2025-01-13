@@ -1,4 +1,4 @@
-This is a JavaFX application makes it easy to create a minecraft server
+This is a JavaFX application that makes it easy to create a minecraft server
 
 You can choose weather you want a fabric, paper or vanilla server
 
